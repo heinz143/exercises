@@ -1,0 +1,53 @@
+.gradient {
+    background-image: url("../images/gradient.jpg");
+    background-repeat: repeat-x;
+    background-color: gray;
+}
+
+.felt {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    background-image: url("../images/felt.jpg");
+    background-color: green;
+    top: 25px;
+    left: 25px;
+    width: 300px;
+    height: 300px;
+
+}
+img {
+    width: 64px;
+    height: 100px;
+}
+
+.ten {
+    position: absolute;
+    left:110px;
+    top: 140px;
+    z-index: 5;
+}
+.jack {
+    position: absolute;
+    left:110px;
+    top: 115px;
+    z-index: 4;
+}
+.queen {
+    position: absolute;
+    left:110px;
+    top: 90px;
+    z-index: 3;
+}
+.king {
+    position: absolute;
+    left:110px;
+    top: 65px;
+    z-index: 2;
+}
+.card {
+    position: absolute;
+    left:110px;
+    top: 40px;
+    z-index: 1;
+}
