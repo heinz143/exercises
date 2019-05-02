@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Kiku Home</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="container">
+<nav>
+    <a href="index.html">
+        <img src="images/kiku_Bistro.jpg" alt="kiku" id="logo">
+    </a>
+    <div id="navbar">
+        <a href="about.html">ABOUT</a>
+        <a href="menu.html">MENU</a>
+        <a href="specials.html">SPECIALS</a>
+        <a href="#" id="contact">CONTACT</a>
+        <a href="#">ORDER</a>
+        <a href="#">LOCATION</a>
+    </div>
+</nav>
+
+<img class="mySlides" src="images/james-jean-wallpaper.jpg">
+<img class="mySlides" src="images/yaki_udon.jpg">
+<img class="mySlides" src="images/sushirolls.jpg">
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+<footer>
+    <div class="footnav">
+        <a href="about.html">ABOUT</a>
+        <a href="menu.html">MENU</a>
+        <a href="specials.html">SPECIALS</a>
+        <a href="#">CONTACT</a>
+        <a href="#">ORDER</a>
+        <a href="#">LOCATION</a>
+    </div>
+    <div class="hours">
+        <h2>HOURS</h2>
+        <h3>Monday - Thursday: 4:30pm-12:30am<br>
+            Friday - Saturday: 3pm-1:30am<br>
+            Sunday: 3pm-12:30am</h3>
+    </div>
+    <div class="location">
+        <h2>LOCATION</h2>
+        <h3>Uptown Bar, Sushi, & Asian Cuisine <br>
+            2819 Hennepin Ave S. Minneapolis  55408
+        </h3>
+    </div>
+    <div class="social">
+        <h2>SOCIAL</h2>
+        <a href="https://www.facebook.com/kikubistrompls/?ref=hl">
+            <img border="0" alt="facebook" src="images/fb.png" height="38">
+        </a>
+        <a href="https://www.instagram.com/explore/locations/538123099/kiku-bistro/">
+            <img src="images/ig.png" alt="instagram" height="35" class="ig">
+        </a>
+        <a href="https://www.youtube.com/watch?v=yjCsNsSSx3I">
+            <img src="images/youtube.png" alt="youtube" height="35" class="ig">
+        </a>
+    </div>
+
+</footer>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+</html>
