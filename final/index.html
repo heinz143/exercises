@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="container">
+<header>
+    <h1>Exploring Amsterdam</h1>
+    <h2>Top 10 Attractions to Visit</h2>
+    <div class="slideshow">
+        <div class="w3-display-container mySlides">
+            <img src="images/rijks.jpg" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Rijksmuseum
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/keukenhof-gardens.jpg" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Keukenhof Gardens
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/anne.jpg" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Anne Frank House
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/gogh.jpg" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Van Gogh Museum
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/vondelpark.JPG" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Vondelpark
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/jordaan.jpg" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                The Jordaan District
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/zoo.jpg" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                ARTIS Amsterdam Royal Zoo
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/lookout.jpg" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                A'Dam Lookout
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/heineken.jpg" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Heineken Experience Brewery
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/rembrandt.jpg" style="width:80%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Rembrandt House Museum
+            </div>
+        </div>
+        <!--<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>-->
+        <!--<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>-->
+
+        <div class="w3-center">
+            <div class="w3-section">
+                <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+            </div>
+            <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+            <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+            <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+            <button class="w3-button demo" onclick="currentDiv(4)">4</button>
+            <button class="w3-button demo" onclick="currentDiv(5)">5</button>
+            <button class="w3-button demo" onclick="currentDiv(6)">6</button>
+            <button class="w3-button demo" onclick="currentDiv(7)">7</button>
+            <button class="w3-button demo" onclick="currentDiv(8)">8</button>
+            <button class="w3-button demo" onclick="currentDiv(9)">9</button>
+            <button class="w3-button demo" onclick="currentDiv(10)">10</button>
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-red", "");
+                }
+                x[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " w3-red";
+            }
+        </script>
+    </div>
+</header>
+<main>
+<h3>Here are the Top 10 Places to Visit in Amsterdam:</h3>
+    <ol>
+        <li>
+            <strong>Rijksmuseum | </strong>
+            The Rijksmuseum is a Dutch national museum dedicated to arts and history in Amsterdam. The museum is located at the Museum Square in the borough Amsterdam South, close to the Van Gogh Museum, the Stedelijk Museum Amsterdam, and the Concertgebouw.
+        </li>
+        <li>
+            <strong>Keukenhof Gardens | </strong>
+            Keukenhof, als | o known as the Garden of Europe, is one of the world's largest flower gardens, situated in Lisse, South Holland, Netherlands. According to the official website for the Keukenhof Park, approximately 7 million flower bulbs are planted annually in the park, which covers an area of 32 hectares.
+        </li>
+        <li>
+            <strong>Anne Frank House | </strong>
+            The Anne Frank House is a writer's house and biographical museum dedicated to Jewish wartime diarist Anne Frank. The building is located on a canal called the Prinsengracht, close to the Westerkerk, in central Amsterdam in the Netherlands.
+        </li>
+        <li>
+            <strong>Van Gogh Museum | </strong>
+            The Van Gogh Museum is one of the many art museums in the Netherlands dedicated to the works of Vincent van Gogh and his contemporaries in Amsterdam in the Netherlands. The Van Gogh House can be visited in Zundert, a museum in Van Gogh's old residence.
+        </li>
+        <li>
+            <strong>Vondelpark | </strong>
+            The Vondelpark is a public urban park of 47 hectares in Amsterdam, Netherlands. It is part of the borough of Amsterdam-Zuid and situated west from the Leidseplein and the Museumplein.
+        </li>
+        <li>
+            <strong>The Jordaan District | </strong>
+            The narrow canals and streets of trendy Jordaan are flanked by indie boutiques, cozy pubs and hip eateries. Stalls at the Noordermarkt square market offer jewelry, clothes, antiques and organic food. Antiques Centre Amsterdam sells vintage ceramics and paintings, while smaller galleries in the area focus on innovative contemporary art.
+        </li>
+        <li>
+            <strong>ARTIS Amsterdam Royal Zoo | </strong>
+            Artis, short for Natura Artis Magistra, is a zoo in the centre of Amsterdam. It is the oldest zoo in the Netherlands and one of the oldest zoos of mainland Europe. Next to possessing a zoo, Artis also contains an aquarium and a planetarium. Artis also has an arboretum and a fairly large art collection.
+        </li>
+        <li>
+            <strong>A'Dam Lookout | </strong>
+            Elevator with a light show to a 20-story rooftop with a restaurant/bar & an over-the-edge swing.
+        </li>
+        <li>
+            <strong>Heineken Experience Brewery | </strong>
+            Interactive tour through beer giant's history in former brewery, with a tasting room finale.
+        </li>
+        <li>
+            <strong>Rembrandt House Museum | </strong>
+            The Rembrandt House Museum is a historic house and art museum in Amsterdam in the Netherlands. Painter Rembrandt lived and worked in the house between 1639 and 1656. The 17th-century interior has been reconstructed. The collection contains Rembrandt's etchings and paintings of his contemporaries.
+        </li>
+    </ol>
+
+
+    <blockquote>
+        <p>
+            "The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience."
+        </p>
+        <p class="cite">&#8212;Eleanor Roosevelt
+        </p>
+    </blockquote>
+
+    <h3 class="link">Plan your trip <a href="https://www.tripadvisor.co.uk/Attractions-g188590-Activities-Amsterdam_North_Holland_Province.html">NOW!</a></h3>
+</main>
+
+
+</body>
+</html>

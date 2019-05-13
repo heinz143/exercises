@@ -1,0 +1,130 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+header {
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1  {
+    padding-top: 30px;
+    font-size: 4.5vw;
+    line-height: 0.5;
+}
+h2  {
+    font-size: 2.5vw;
+}
+
+h1, h2, h3 {
+    color: #231b42;
+    font-family: Oswald, sans-serif;
+}
+
+.slideshow {
+    padding-bottom: 30px;
+}
+
+.mySlides {
+    padding-bottom: 20px;
+}
+
+main {
+    padding: 40px;
+    margin: 0px 120px 70px 120px;
+    font-family: "Open Sans", sans-serif;
+    background-color: floralwhite;
+}
+
+h3 {
+    font-size: 1.9vw;
+}
+ol {
+    line-height: 1.5;
+}
+
+li {
+    padding: 10px 5px;
+    font-size: 1.25vw;
+}
+
+strong {
+    font-weight: 700;
+    color: darkred;
+    font-size: 1.35vw;
+
+}
+
+blockquote {
+    font-family: Oswald, sans-serif;
+    display: block;
+    font-size: 2vw;
+    padding: 20px 140px;
+    color: teal;
+}
+.cite {
+    font-style: italic;
+    font-size: 1.4vw;
+    color: lightseagreen;
+    font-family: "Open Sans", sans-serif;
+}
+
+.link {
+    text-align: center;
+}
+
+/*tablet, iPad*/
+@media only screen and (max-width: 769px) {
+
+    main {
+        padding: 30px;
+        margin: 0 75px;
+    }
+
+    blockquote {
+        padding: 20px 90px;
+    }
+
+}
+
+/*phone*/
+@media only screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 6vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    main {
+        padding: 10px;
+        margin: 0 40px;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+    ol {
+        line-height: 2;
+    }
+    strong {
+        font-size: 2.2vw;
+    }
+    li {
+        padding: 0 30px 10px 0;
+        font-size: 2vw;
+    }
+
+    blockquote {
+        padding: 5px 20px 30px 20px;
+        font-size: 3vw;
+    }
+    .cite {
+        font-size: 2.2vw;
+    }
+
+
+}
